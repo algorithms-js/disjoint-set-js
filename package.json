@@ -1,0 +1,25 @@
+{
+  "name": "disjoint-set-js",
+  "version": "1.0.0",
+  "description": "Implementation of the data structure Disjoint Set",
+  "main": "lib/DisjointSet.js",
+  "repository": "git@github.com:algorithms-js/disjoint-set-js.git",
+  "author": "Jhon Emmanuel Torres Toloza <jhetorresto@unal.edu.co>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^23.4.1"
+  },
+  "jest": {
+    "preset": "jest-preset-coffeescript"
+  },
+  "scripts": {
+    "test": "jest",
+    "prepublish": "./node_modules/coffeescript/bin/coffee --compile --transpile --inline-map --output lib/ src/"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "coffeescript": "^2.3.1",
+    "jest-preset-coffeescript": "^1.0.0"
+  }
+}
